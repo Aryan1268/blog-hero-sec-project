@@ -1,0 +1,135 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-image: linear-gradient(to right top, #def636, #ffbc00, #ff7446, #ff0a8a, #eb12d1);
+    box-sizing: border-box;
+    background-repeat: no-repeat;
+    /* background-position: fixed; */
+    background-size: contain;
+    /* height: 100vh; */
+}
+
+.container{
+    display: flex;
+    padding: 20px;
+    /* height: 95vh; */
+}
+
+.left-box{
+   flex: 1;
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+   align-items: center;
+}
+
+.white{
+    background-color: #ccc;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 12px;
+    /* width: 50%; */
+}
+
+.img-left{
+    width: 350px;
+    height: 300px;
+    align-items: center;
+    border-radius: 12px;
+}
+
+.green{
+    background-color: rgb(154, 236, 154);
+    font-size: 3rem;
+    font-weight: bold;
+    height: 40vh;
+    width: 45%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 12px;
+    /* align-items: center; */
+}
+
+.right-box{
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    /* background-color: aqua; */
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.right-box span{
+    font-size: 2rem;
+    font-weight: bold;
+    text-transform: capitalize;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* .first{
+    display: flex;
+    flex: 1;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items:center;
+    gap: 20px;
+    
+} */
+
+.pink{
+    background-color: rgb(239, 104, 127);
+    /* min-height: 30vh; */
+    /* width: 35%; */
+    width: 250px;
+    height: 180px;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    /* text-align: center; */
+    border-radius: 12px;
+    gap: 10px;
+    
+}
+
+.light-green{
+    background-color: rgb(154, 236, 154);
+    width: 250px;
+        height: 180px;
+    border-radius: 12px;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+
+.blue{
+    background-color: blue;
+    width: 250px;
+        height: 180px;
+    border-radius: 12px;
+    display: flex;
+        justify-content: center;
+        padding: 10px;
+}
+
+@media screen and (max-width:900px) {
+    .container{
+        flex-direction: column;
+        gap: 10px;
+
+    }
+
+        .left-box{
+            gap: 10px;
+
+        }
+
+        .green{
+            width: 270px;
+        }
+}
